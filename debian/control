@@ -1,0 +1,40 @@
+Source: libalien-base-perl
+Section: perl
+Priority: optional
+Maintainer: C.J. Collier <cjcollier@linuxfoundation.org>
+Build-Depends: debhelper (>= 9),
+ perl
+Build-Depends-Indep: libcapture-tiny-perl (>= 0.17),
+ libffi-checklib-perl (>= 0.11),
+ libfile-chdir-perl (>= 0.1005),
+ libfile-sharedir-perl,
+ libhttp-tiny-perl (>= 0.044) | perl (>= 5.21.3),
+ liblist-moreutils-perl,
+ libshell-config-generate-perl,
+ libshell-guess-perl,
+ libsort-versions-perl,
+ liburi-perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Alien-Base
+
+Package: libalien-base-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ libcapture-tiny-perl (>= 0.17),
+ libffi-checklib-perl (>= 0.11),
+ libfile-chdir-perl (>= 0.1005),
+ libfile-sharedir-perl,
+ libhttp-tiny-perl (>= 0.044) | perl (>= 5.21.3),
+ liblist-moreutils-perl,
+ libshell-config-generate-perl,
+ libshell-guess-perl,
+ libsort-versions-perl,
+ liburi-perl,
+ perl (>= 5.13.9)
+Description: A base class for Alien:: modules
+ Alien::Base comprises base classes to help in the construction of Alien::
+ modules. Modules in the Alien namespace are used to locate and install (if
+ necessary) external libraries needed by other Perl modules.
+ .
+ This is the documentation for the Alien::Base module itself. To learn more
+ about the system as a whole please see Alien::Base::Authoring.
